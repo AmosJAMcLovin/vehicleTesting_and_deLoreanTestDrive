@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<!-- // Program Name:Incom Corporation Vehicle Testing
+
+// Purpose: Report the number of errors for a vehicle tester on a certain day
+// Task Number: 1
+// Student Name: Amos Johnson
+-->
+
+<body>
+	<script type="text/javascript">
+	// Variables
+	var number;
+	var error;
+	var day;
+
+	var sTally = 0;
+	var tTally = 0;
+	var wTally = 0;
+	var br = "<br>"
+	
+	
+	day = prompt("Welcome! Enter the day: e.g.) monday, tuesday, wednesday, etc.");
+	day;
+	
+	// do statement followed by if and else
+	do {
+	error = prompt("Please Enter which error you came acros: [S]teering issues, [T]urbo booster, [W]iper blades or enter [X] to quit (TURN CAPS LOCK ON)");
+
+	if (error == "S"){
+		sTally = sTally + 1;
+	} 
+	else if (error == "T") {
+		tTally = tTally + 1;
+	}
+	else if (error == "W") {
+		wTally = wTally + 1;
+	} 
+}
+// while loop listing the errors
+while(error != "X")
+
+document.write("Incom Corporation Report: " + day + br);
+document.write("You have encountered " + sTally + " Steering issue(s) during your run" + br);
+document.write("You have encountered " + tTally + " Turbo Booster error(s) during your run" + br);
+document.write("You have encountered " + wTally + " Wiper Blade problem(s) during your run" + br);
+document.write("Thank you for your feedback!");
+	
+	</script>
+</body>
+</html>

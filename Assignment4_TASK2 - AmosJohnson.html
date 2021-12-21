@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<!-- // Program Name: Delorean Test Drive game
+
+// Purpose: Create a time travelling Delorean system
+// Task Number: 1
+// Student Name: Amos Johnson
+-->
+
+<body>
+	<script type="text/javascript">
+	// Variables
+	var drive;
+    var speed = 0
+	var br = "<br>"
+
+// do statement followed by if and else
+do {
+    drive = prompt("Your current speed is " + speed + "mph. Do you want to [A]ccelerate or [B]rake? (TURN CAPS LOCK ON)");
+    
+    if (drive == "A") {
+       speed = speed + 10;
+    }
+    else if (drive == "B") {
+        break;
+        document.write("You have achieved a top speed of " + speed + "mph" + br);
+    }
+}
+//while statement followed by a function that ends the program once passing 88mph
+while (speed < 90) {
+    if (speed > 88) { document.write("You travelled back in time!" + br);
+    }
+    document.write("You have achieved a top speed of " + speed + "mph" + br);
+}
+	</script>
+</body>
+</html>
